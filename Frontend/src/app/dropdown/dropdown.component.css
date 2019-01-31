@@ -1,0 +1,75 @@
+.dropdown>.outer-list {
+  position: absolute;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+.dropdown>.outer-list.top {
+  align-items: flex-start;
+  transform-origin: 50% 0;
+}
+
+.dropdown>.outer-list.left {
+  justify-content: flex-start;
+}
+
+.dropdown>.outer-list.bottom {
+  align-items: flex-end;
+  transform-origin: 50% 100%;
+}
+
+.dropdown>.outer-list.right {
+  justify-content: flex-end;
+}
+
+.dropdown>.outer-list>ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+}
+
+.dropdown>.outer-list>ul li {
+  padding: .25em 3em;
+  margin: .25em;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.35s ease;
+}
+
+.dropdown>.outer-list>ul li:hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+/* button styles */
+
+.cat.dropdown-open+.outer-list {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 5px 5px;
+}
+
+.cat {
+  text-decoration: none;
+}

@@ -1,0 +1,55 @@
+<div class="login-page sidebar-collapse">
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(../assets/img/login.jpg)"></div>
+    <div class="content">
+      <div class="container">
+        <div class="col-md-4 ml-auto mr-auto">
+          <div class="card card-login card-plain">
+            <form class="form" [formGroup]="form">
+              <div class="card-header text-center">
+                <div class="logo-container">
+                  <img src="../assets/img/now-logo.png" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="input-group no-border input-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="now-ui-icons users_circle-08"></i>
+                    </span>
+                  </div>
+                  <input formControlName="email" type="text" class="form-control" placeholder="Email or Phone...">
+                </div>
+
+                <div class="input-group no-border input-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="now-ui-icons objects_key-25"></i>
+                    </span>
+                  </div>
+                  <input formControlName="password" type="text" placeholder="Password..." class="form-control" />
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a (click)="onSubmit()" href="javascript:void(0)" class="btn btn-primary btn-round btn-lg btn-block">Get
+                  Started</a>
+                <div class="pull-left">
+                  <h6><a href="javascript:void(0)" class="link" data-toggle="modal" data-target="#myModal1">Fogot
+                      password ?</a></h6>
+                </div>
+                <div class="pull-right">
+                  <h6><a href="javascript:void(0)" class="link">Terms & Condition</a></h6>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+
+  </div>
+</div>
+
+<app-recovery [recoveryUpModel]="'myModal1'"></app-recovery>

@@ -1,0 +1,67 @@
+<!-- Mini Modal -->
+<div class="modal fade modal-mini modal-primary" id="{{ recoveryUpModel }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="card card-signup" data-background-color="orange">
+        <form class="form" method="" action="">
+          <div class="card-header text-center">
+            <h3 class="card-title title-up">Account Recovery</h3>
+          </div>
+          <div class="card-body">
+
+            <div *ngIf="!codeSent" class="input-group no-border">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons ui-1_email-85"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Email...">
+            </div>
+
+            <p *ngIf="codeSent" style="font-size: 12px;"> * Check your email for the verification code</p>
+            <div *ngIf="codeSent" class="input-group no-border">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons tech_mobile"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Verification Code...">
+            </div>
+
+            <div *ngIf="codeSent" class="input-group no-border">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons objects_key-25"></i>
+                </span>
+              </div>
+              <input type="password" class="form-control" placeholder="New Password...">
+            </div>
+
+            <div *ngIf="codeSent" class="input-group no-border">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons objects_key-25"></i>
+                </span>
+              </div>
+              <input type="password" class="form-control" placeholder="Password Confirm...">
+            </div>
+
+          </div>
+          <div class="card-footer text-center">
+            <a *ngIf="!codeSent" href="javascript:void(0);" (click)="codeSend()" class="btn btn-neutral btn-round btn-lg">
+              Send me the code
+            </a>
+            <a *ngIf="codeSent" href="javascript:void(0);" (click)="codeSend()" class="btn btn-neutral btn-round btn-lg">
+              Reset Password
+            </a>
+            <div *ngIf="codeSent">
+              <a href="javascript:void(0);" (click)="codeSent = false" class="link">Resend the code</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  End Modal -->

@@ -1,0 +1,112 @@
+<div class="login-page sidebar-collapse">
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(../assets/img/login.jpg)"></div>
+    <div class="content">
+      <div class="container">
+        <div _ngcontent-c2="" class="row">
+          <div _ngcontent-c2="" class="col-md-6 ml-auto mr-auto">
+            <h4 _ngcontent-c2="" class="title text-center">What would you like ?</h4>
+            <div _ngcontent-c2="" class="nav-align-center">
+              <ul _ngcontent-c2="" class="nav nav-pills nav-pills-primary nav-pills-just-icons">
+                <li _ngcontent-c2="" class="nav-item">
+                  <a _ngcontent-c2="" class="nav-link active show" data-toggle="tab">
+                    <i class="fas fa-user-cog"></i>
+                  </a>
+                </li>
+                <li _ngcontent-c2="" class="nav-item">
+                  <a _ngcontent-c2="" class="nav-link" data-toggle="tab">
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <form class="form" [formGroup]="form">
+              <div class="row card-body">
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.fname.dirty && form.controls.fname.invalid">
+                        <!-- <i class="now-ui-icons users_circle-08"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="fname" type="text" class="form-control" placeholder="First Name...">
+                  </div>
+                </div>
+
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.lname.dirty && form.controls.lname.invalid">
+                        <!-- <i class="now-ui-icons objects_key-25"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="lname" type="text" placeholder="Last Name..." class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.email.dirty && form.controls.email.invalid">
+                        <!-- <i class="now-ui-icons objects_key-25"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="email" type="text" placeholder="Email..." class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.mobileno.dirty && form.controls.mobileno.invalid">
+                        <!-- <i class="now-ui-icons objects_key-25"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="mobileno" type="text" placeholder="Phone number..." class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.password.dirty && form.controls.password.invalid">
+                        <!-- <i class="now-ui-icons objects_key-25"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="password" type="text" placeholder="Password..." class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 offset-md-4">
+                  <div class="input-group no-border input-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" [class.has-danger]="form.controls.passwordConfirm.dirty && (form.controls.password.value !== form.controls.passwordConfirm.value)">
+                        <!-- <i class="now-ui-icons objects_key-25"></i> -->
+                      </span>
+                    </div>
+                    <input formControlName="passwordConfirm" type="text" placeholder="Password Confirm..." class="form-control" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4 offset-md-4">
+                <div class="card-footer text-center">
+                  <a (click)="onSubmit()" href="javascript:void(0)" class="btn btn-primary btn-round btn-md btn-block">Get
+                    Started</a>
+                  <div class="pull-right">
+                    <h6><a href="#pablo" class="link">Terms & Condition</a></h6>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.col-md-4 {
+  margin-top: 10px;
+}
+
+.team-player {
+  cursor: pointer;
+}
+
+.accepted {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 400;
+}
+
+.accepted-item {
+  opacity: 0.5;
+}

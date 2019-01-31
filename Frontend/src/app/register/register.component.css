@@ -1,0 +1,21 @@
+.nav-item {
+  cursor: pointer;
+}
+
+.login-page .form-control::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.form-control {
+  color: white;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.has-danger {
+  background-color: red;
+}

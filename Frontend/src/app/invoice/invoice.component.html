@@ -1,0 +1,28 @@
+
+<br><br><br><br>
+ 
+
+
+
+
+
+
+
+<div *ngIf="!view">
+  <form class="form" [formGroup]="form">
+    <input hidden formControlName="User_ID" type="text" placeholder="Email..." class="form-control" />
+    <input hidden formControlName="Employee_name" type="text" placeholder="name" class="form-control" />
+    <input formControlName="Basic_charge" type="text" placeholder="Basic Charge" class="form-control" />
+    <input formControlName="Cost" type="text" placeholder="Cost" class="form-control" />
+    <input formControlName="Total_Cost" type="text" placeholder="Total Cost" class="form-control" />
+    <button (click) = "viewDiv()">Create</button>
+  </form>
+</div>
+<div *ngIf = "view">
+Employee name: {{this.form.value.Employee_name}} <br>
+Basic Charge: {{this.form.value.Basic_charge}} <br>
+Cost: {{this.form.value.Cost}} <br>
+Total Cost: {{this.form.value.Total_Cost}} <br>
+
+<button (click)="onSubmit()">Confirm</button>
+</div>

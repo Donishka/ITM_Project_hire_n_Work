@@ -1,0 +1,19 @@
+<div *ngFor="let msg of messages" [ngClass]="{
+    'alert-success': msg.type === 'success',
+    'alert-info': msg.type === 'info',
+    'alert-warning': msg.type === 'warning',
+    'alert-danger': msg.type === 'danger'
+  }"
+  class="alert" role="alert">
+  <div class="container">
+    <div class="alert-icon">
+      <i class="now-ui-icons ui-2_like"></i>
+    </div>
+    <strong>{{ msg.title }}</strong> {{ msg.description }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">
+        <i class="now-ui-icons ui-1_simple-remove"></i>
+      </span>
+    </button>
+  </div>
+</div>

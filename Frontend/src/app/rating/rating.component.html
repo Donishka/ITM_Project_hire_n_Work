@@ -1,0 +1,27 @@
+<ul class="pagination pagination-primary">
+  <li class="page-item active" [ngClass]="{'not-rated': rating < 1}">
+    <a [ngStyle]="{'color': (rating > 0) ? 'yellow' : 'white'}" style="font-size: 16px;" class="page-link">
+      <i [ngClass]="rating < 1 ? 'far fa-star' : 'fas fa-star'"></i>
+    </a>
+  </li>
+  <li class="page-item active" [ngClass]="{'not-rated': rating < 2}">
+    <a [ngStyle]="{'color': (rating > 1) ? 'yellow' : 'white'}" style="font-size: 16px;" class="page-link">
+      <i [ngClass]="rating < 2 ? 'far fa-star' : 'fas fa-star'"></i>
+    </a>
+  </li>
+  <li class="page-item active" [ngClass]="{'not-rated': rating < 3}">
+    <a [ngStyle]="{'color': (rating > 2) ? 'yellow' : 'white'}" style="font-size: 16px;" class="page-link">
+      <i [ngClass]="rating < 3 ? 'far fa-star' : 'fas fa-star'"></i>
+    </a>
+  </li>
+  <li class="page-item active" [ngClass]="{'not-rated': rating < 4}">
+    <a [ngStyle]="{'color': (rating > 3) ? 'yellow' : 'white'}" style="font-size: 16px;" class="page-link">
+      <i [ngClass]="rating < 4 ? 'far fa-star' : 'fas fa-star'"></i>
+    </a>
+  </li>
+  <li class="page-item active not-rated" [ngClass]="{'not-rated': rating < 5}">
+    <a [ngStyle]="{'color': (rating > 4) ? 'yellow' : 'white'}" style="font-size: 16px;" class="page-link">
+      <i [ngClass]="rating < 5 ? 'far fa-star' : 'fas fa-star'"></i>
+    </a>
+  </li>
+</ul>

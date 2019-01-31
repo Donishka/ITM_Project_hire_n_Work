@@ -1,0 +1,124 @@
+<div class="landing-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small">
+
+      <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/bg6.jpg');">
+      </div>
+      <div class="content-center">
+        <div class="container">
+          <h1 class="title">Hire our skilled workers</h1>
+          <div class="text-center">
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section section-team text-center">
+      <div class="container">
+        <h2 class="title">Search Worker</h2>
+        <div style="margin-bottom: 30px;" class="row">
+          <div class="offset-md-3 col-md-3">
+            <app-dropdown [placeHolder]="'Select Category'" [listItems]="categories"></app-dropdown>
+          </div>
+          <div class="col-md-3">
+            <app-dropdown [placeHolder]="'Filter By'" [listItems]="filters"></app-dropdown>
+          </div>
+        </div>
+
+
+        <div class="team">
+          <div class="row">
+            <div class="col-md-4">
+              <div (click)="itemClicked()" class="team-player">
+                <img src="../assets/img/eva.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Punsara Chathushthari</h4>
+                <p class="category text-primary">Model</p>
+                <app-rating [rating]="2"></app-rating>
+                <p class="description">You can write here details about one of your team members. You can give more
+                  details about what they do. Feel free to add some <a href="#">links</a> for people to be able to
+                  follow
+                  them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div (click)="itemClicked()" class="team-player">
+                <img src="../assets/img/ryan.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Achintha Madumal</h4>
+                <p class="category text-primary">Developer</p>
+                <app-rating [rating]="5"></app-rating>
+                <p class="description">You can write here details about one of your team members. You can give more
+                  details about what they do. Feel free to add some <a href="#">links</a> for people to be able to
+                  follow
+                  them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div (click)="itemClicked()" class="team-player">
+                <img src="../assets/img/kalana.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Kalana Heshan</h4>
+                <p class="category text-primary">Designer</p>
+                <app-rating [rating]="3"></app-rating>
+                <p class="description">You can write here details about one of your team members. You can give more
+                  details about what they do. Feel free to add some <a href="#">links</a> for people to be able to
+                  follow
+                  them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div (click)="itemClicked()" class="team-player">
+                <img src="../assets/img/kalana.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Kalana Heshan</h4>
+                <p class="category text-primary">Designer</p>
+                <app-rating [rating]="3"></app-rating>
+                <p class="description">You can write here details about one of your team members. You can give more
+                  details about what they do. Feel free to add some <a href="#">links</a> for people to be able to
+                  follow
+                  them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div (click)="itemClicked()" class="team-player">
+                <img src="../assets/img/kalana.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Kalana Heshan</h4>
+                <p class="category text-primary">Designer</p>
+                <app-rating [rating]="3"></app-rating>
+                <p class="description">You can write here details about one of your team members. You can give more
+                  details about what they do. Feel free to add some <a href="#">links</a> for people to be able to
+                  follow
+                  them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</div>

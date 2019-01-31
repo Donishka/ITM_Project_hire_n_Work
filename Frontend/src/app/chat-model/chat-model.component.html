@@ -1,0 +1,28 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up"><i class="fas fa-comments"></i> {{ displayName }}</h4>
+      </div>
+      <div class="modal-body">
+        <div #scrollMe [scrollTop]="scrollMe.scrollHeight" class="chat-body">
+          <div *ngFor="let msg of messages" [ngClass]="{'user-message': username === msg.sender, 'my-message': username !== msg.sender}">
+            {{ msg.message }}
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="input-group">
+          <input (keyup.enter)="sendMessage(msgText)" #msgText type="text" class="form-control" placeholder="Type here ..."
+            autocomplete="off">
+          <div class="input-group-append">
+            <span (click)="sendMessage(msgText)" class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div style="width: 100%" class="dropdown">
+  <a href="#" class="cat">
+    <div class="form-group">
+      <input type="text" value="{{ name }}" placeholder="{{ placeHolder }}" class="form-control" autocomplete="off">
+    </div>
+  </a>
+  <div class="outer-list top">
+    <ul>
+      <li (click)="itemClicked(item)" *ngFor="let item of listItems">{{ item }}</li>
+    </ul>
+  </div>
+</div>

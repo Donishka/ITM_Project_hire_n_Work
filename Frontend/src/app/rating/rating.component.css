@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  color: yellow;
+}
+
+.pagination .not-rated {
+  opacity: 0.5;
+}
