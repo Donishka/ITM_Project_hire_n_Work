@@ -39,7 +39,10 @@ Total Cost: {{this.form.value.Total_Cost}} <br>
 <div class="mt-4"></div>
 	<div id="page-wrap">
 
-		<textarea id="header">INVOICE</textarea>
+    <textarea id="header">INVOICE</textarea>
+    <button class="btn btn-danger mr-4" type="button" value="Save" (click)="save()" id="hiderow" style="min-height: 30px; min-width: 40px">Save</button>
+    <button class="btn btn-danger" type="button" value="Print" (click)="print()" id="hiderow" style="min-height: 30px; min-width: 40px">Print</button>
+
 		
 		<div id="identity">
 		
@@ -50,7 +53,8 @@ Appleville, WI 53719
 Phone: (555) 555-5555</textarea>
 
             <div id="logo">
-
+              
+    
               <div id="logoctr">
                 <a href="javascript:;" id="change-logo" title="Change logo">Change Logo</a>
                 <a href="javascript:;" id="save-logo" title="Save changes">Save</a>
@@ -156,5 +160,3 @@ c/o Steve Widget</textarea>
 	
 	</div>
 </div>
-
-<button type="button" value="Save" (click)="save()">Save</button>

@@ -84,4 +84,8 @@ save()
   });
 
 }
+
+print(){
+  window.print();
+}
 }
